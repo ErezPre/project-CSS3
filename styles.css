@@ -1,5 +1,9 @@
-.container {
+body {
   height: 100vh;
+  margin: 0;
+}
+.container {
+  height: 100%;
   background-color: blue;
   display: grid;
   grid-template-areas:
@@ -15,6 +19,7 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 .footer {
   grid-area: footer;
@@ -30,4 +35,14 @@
 .main {
   grid-area: main;
   background-color: blueviolet;
+}
+.nav-link {
+  height: 50%;
+  background-color: aqua;
+  font-size: 200%;
+}
+.home {
+  margin-right: 50px;
+}
+a {
 }
