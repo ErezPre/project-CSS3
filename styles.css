@@ -43,7 +43,7 @@ body {
   grid-area: footer;
   align-self: center;
   height: auto;
-  width: auto;
+  overflow-wrap: break-word;
   border-top-style: solid;
   border-color: var(--border-color);
   font-size: 27px;
