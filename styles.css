@@ -1,10 +1,20 @@
+* {
+  --border-color: #957125;
+}
 body {
   height: 100vh;
   margin: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(195, 150, 34, 1) 0%,
+    rgba(231, 178, 65, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .container {
   height: 100%;
-  background-color: blue;
+
   display: grid;
   grid-template-areas:
     "navbar navbar"
@@ -16,31 +26,31 @@ body {
 .navbar {
   height: auto;
   grid-area: navbar;
-  background-color: yellow;
+
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   align-items: center;
   border-bottom-style: solid;
+  border-color: var(--border-color);
 }
 .footer {
   grid-area: footer;
-  background-color: yellow;
   align-self: center;
   height: 100%;
   border-top-style: solid;
+  border-color: var(--border-color);
 }
 
 .left-description {
   grid-area: left-description;
-  background-color: green;
   border-right-style: solid;
+  border-color: var(--border-color);
   font-size: 30px;
 }
 .main {
   grid-area: main;
-  background-color: blueviolet;
   height: auto;
   width: auto;
 }
@@ -53,14 +63,27 @@ body {
 }
 .nav-link {
   height: auto;
-  background-color: aqua;
   font-size: 200%;
   text-decoration: none;
   margin: 5px;
   border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgb(41, 10, 128) 0%,
+    rgb(32, 184, 218) 100%
+  );
+  color: cornsilk;
+  font-family: Impact, Charcoal, sans-serif;
+  text-transform: capitalize;
+  padding: 1px 10px;
 }
 .home {
   margin-right: 50px;
+  background: linear-gradient(
+    0deg,
+    rgb(153, 15, 68) 0%,
+    rgb(236, 86, 136) 100%
+  );
 }
 a {
 }
