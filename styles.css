@@ -20,21 +20,29 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  border-bottom-style: solid;
 }
 .footer {
   grid-area: footer;
   background-color: yellow;
   align-self: center;
   height: 100%;
+  border-top-style: solid;
 }
 
 .left-description {
   grid-area: left-description;
   background-color: green;
+  border-right-style: solid;
+  font-size: 30px;
 }
 .main {
   grid-area: main;
   background-color: blueviolet;
+}
+.big-nums-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .nav-link {
   height: 50%;
@@ -45,4 +53,17 @@ body {
   margin-right: 50px;
 }
 a {
+  text-decoration: none;
+}
+.big-num {
+  font-size: 100px;
+  height: 90%;
+  width: 90%;
+  margin: 10px;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10%;
 }
