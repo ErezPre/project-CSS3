@@ -14,9 +14,11 @@ body {
   grid-template-rows: auto auto auto;
 }
 .navbar {
+  height: auto;
   grid-area: navbar;
   background-color: yellow;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -49,10 +51,12 @@ body {
   width: 95%;
 }
 .nav-link {
-  height: 50%;
+  height: auto;
   background-color: aqua;
   font-size: 200%;
   text-decoration: none;
+  margin: 5px;
+  border-radius: 10px;
 }
 .home {
   margin-right: 50px;
