@@ -34,6 +34,7 @@ body {
   align-items: center;
   border-bottom-style: solid;
   border-color: var(--border-color);
+  background: rgb(7, 36, 73);
 }
 .footer {
   grid-area: footer;
