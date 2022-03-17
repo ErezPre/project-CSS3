@@ -46,9 +46,10 @@ body {
 }
 .big-nums-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   height: 95%;
   width: 95%;
+  gap: 10px;
 }
 .nav-link {
   height: auto;
@@ -65,8 +66,9 @@ a {
 }
 .big-num {
   font-size: 500%;
-  height: 90%;
-  width: 90%;
+  --width: 200px;
+  height: var(--width);
+  width: var(--width);
   margin: 10px;
   background-color: chartreuse;
   display: flex;
