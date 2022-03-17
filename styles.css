@@ -24,7 +24,8 @@ body {
   grid-template-rows: auto auto auto;
 }
 .navbar {
-  height: 70px;
+  height: auto;
+  padding: 15px;
   grid-area: navbar;
 
   display: flex;
