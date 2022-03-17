@@ -38,12 +38,14 @@ body {
   background: rgb(7, 36, 73);
 }
 .footer {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
   grid-area: footer;
   align-self: center;
   height: 50px;
   border-top-style: solid;
   border-color: var(--border-color);
-  font-size: 30px;
+  font-size: 27px;
   background: rgb(7, 36, 73);
   color: whitesmoke;
   text-align: center;
@@ -121,4 +123,16 @@ a {
 
   color: rgb(41, 10, 128);
   text-shadow: 2px 4px 2px rgb(32, 184, 218);
+}
+.nav-link:hover {
+  padding: 10px;
+}
+.big-num:hover {
+  transition-duration: 1.5s;
+  border-radius: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(154, 33, 190, 1) 0%,
+    rgba(214, 26, 96, 1) 100%
+  );
 }
