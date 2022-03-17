@@ -52,10 +52,16 @@ body {
 }
 
 .left-description {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+  color: rgb(14, 31, 73);
   grid-area: left-description;
-  border-right-style: solid;
+  /* border-right-style: solid; */
   border-color: var(--border-color);
   font-size: 30px;
+  margin-top: 115px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .main {
   grid-area: main;
@@ -96,6 +102,9 @@ body {
 a {
 }
 .big-num {
+  font-family: Impact, Charcoal, sans-serif;
+
+  color: #e4e1e6;
   font-size: 500%;
   --width: 200px;
   height: var(--width);
