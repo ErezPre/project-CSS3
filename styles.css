@@ -42,7 +42,7 @@ body {
 
   grid-area: footer;
   align-self: center;
-  height: 50px;
+  height: 100%;
   border-top-style: solid;
   border-color: var(--border-color);
   font-size: 27px;
