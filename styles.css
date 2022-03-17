@@ -1,3 +1,33 @@
-body {
+.container {
+  height: 100vh;
   background-color: blue;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "left-description main"
+    "footer footer";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 80% 10%;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: yellow;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.footer {
+  grid-area: footer;
+  background-color: yellow;
+  align-self: center;
+  height: 100%;
+}
+
+.left-description {
+  grid-area: left-description;
+  background-color: green;
+}
+.main {
+  grid-area: main;
+  background-color: blueviolet;
 }
